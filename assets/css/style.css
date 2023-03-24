@@ -11,11 +11,11 @@
     --color-dark-900: #000;
 
 
-    --color-purple-50: #7c3aed;
-    --color-purple-100: #a855f7;
-    --color-purple-200: #bf46ef;
+    --color-blue-50: #0000CD;
+    --color-blue-100:#0000FF;
+    --color-blue-200: #191970;
 
-    --color-gradient: linear-gradient(90deg, var(--color-purple-50), var(--color-purple-100), var(--color-purple-200));
+    --color-gradient: linear-gradient(90deg, var(--color-blue-50), var(--color-blue-100), var(--color-blue-200));
 
 }
 
@@ -62,7 +62,7 @@
     position: absolute;
     content: '';
     width: 40%;
-    background-color: var(--color-purple-50);
+    background-color: var(--color-blue-50);
     border-radius: 5px;
 }
 
@@ -99,7 +99,7 @@
     gap: 15px;
     padding: 3px;
     cursor: text;
-    border-bottom: 1px solid var(--color-purple-50) ;
+    border-bottom: 1px solid var(--color-blue-50) ;
 }
 
 .input-field i {
@@ -125,7 +125,7 @@
 }
 
 #forgot_password a:hover {
-    color: var(--color-purple-50);
+    color: var(--color-blue-50);
 }
 
 #login_button {
@@ -142,4 +142,14 @@
 
 #login_button:hover {
    transform: scale(1.05);
+}
+
+.dark#login_form {
+    color: var(--color-light-50);
+    background-color: var(--color-dark-100);
+}
+
+.dark#login_form .input-field input,
+.dark#login_form .input-field i {
+    color: var(--color-light-50);
 }
